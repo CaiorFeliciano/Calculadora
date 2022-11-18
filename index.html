@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="VITRINE\style\style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <title>Calculadora</title>
+</head>
+<body>
+    <section class="calculator">
+        <div class="display" id="display"></div>
+        <div class="calculator-buttons">
+            <button id="key1" class="button-1" onclick="insert('1')">1</button>
+            <button id="key2" class="button-2" onclick="insert('2')">2</button>
+            <button id="key3" class="button-3" onclick="insert('3')">3</button>
+            <button id="key4" class="button-4" onclick="insert('4')">4</button>
+            <button id="key5" class="button-5" onclick="insert('5')">5</button>
+            <button id="key6" class="button-6" onclick="insert('6')">6</button>
+            <button id="key7" class="button-7" onclick="insert('7')">7</button>
+            <button id="key8" class="button-8" onclick="insert('8')">8</button>
+            <button id="key9" class="button-9" onclick="insert('9')">9</button>
+            <button id="key0" class="button-0" onclick="insert('0')">0</button>
+            <button id="operatorPoint" class="button-dot" onclick="insert('.')">.</button>
+            <button id="operatorPlus" class="button-plus" onclick="insert('+')">+</button>
+            <button id="operatorMinus" class="button-minus" onclick="insert('-')">-</button>
+            <button id="operatorDivide" class="button-divide" onclick="insert('/')">/</button>
+            <button id="operatorMultiplier" class="button-multiplier" onclick="insert('*')">*</button>
+            <button id="operatorEqual" class="button-equal" onclick="calculate()">=</button>
+            <button id="operatorBackspace" class="button-backspace" onclick="back()"> << </button>
+            <button id="operatorCleaner" class="button-cleaner" onclick="clean()">C</button>
+        </div>
+    </section>
+    <script src="./script.js"></script>
+</body>
+</html>
