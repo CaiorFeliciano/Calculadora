@@ -15,24 +15,72 @@
     <section class="calculator">
         <div class="display" id="display"></div>
         <div class="calculator-buttons">
-            <button id="key1" class="button-1" onclick="insert('1')">1</button>
-            <button id="key2" class="button-2" onclick="insert('2')">2</button>
-            <button id="key3" class="button-3" onclick="insert('3')">3</button>
-            <button id="key4" class="button-4" onclick="insert('4')">4</button>
-            <button id="key5" class="button-5" onclick="insert('5')">5</button>
-            <button id="key6" class="button-6" onclick="insert('6')">6</button>
-            <button id="key7" class="button-7" onclick="insert('7')">7</button>
-            <button id="key8" class="button-8" onclick="insert('8')">8</button>
-            <button id="key9" class="button-9" onclick="insert('9')">9</button>
-            <button id="key0" class="button-0" onclick="insert('0')">0</button>
-            <button id="operatorPoint" class="button-dot" onclick="insert('.')">.</button>
-            <button id="operatorPlus" class="button-plus" onclick="insert('+')">+</button>
-            <button id="operatorMinus" class="button-minus" onclick="insert('-')">-</button>
-            <button id="operatorDivide" class="button-divide" onclick="insert('/')">/</button>
-            <button id="operatorMultiplier" class="button-multiplier" onclick="insert('*')">*</button>
-            <button id="operatorEqual" class="button-equal" onclick="calculate()">=</button>
-            <button id="operatorBackspace" class="button-backspace" onclick="back()"> << </button>
-            <button id="operatorCleaner" class="button-cleaner" onclick="clean()">C</button>
+            <button id="key1" class="button-1" onclick="insertChar('1')">1</button>
+            <button id="key2" class="button-2" onclick="insertChar('2')">2</button>
+            <button id="key3" class="button-3" onclick="insertChar('3')">3</button>
+            <button id="key4" class="button-4" onclick="insertChar('4')">4</button>
+            <button id="key5" class="button-5" onclick="insertChar('5')">5</button>
+            <button id="key6" class="button-6" onclick="insertChar('6')">6</button>
+            <button id="key7" class="button-7" onclick="insertChar('7')">7</button>
+            <button id="key8" class="button-8" onclick="insertChar('8')">8</button>
+            <button id="key9" class="button-9" onclick="insertChar('9')">9</button>
+            <button id="key0" class="button-0" onclick="insertChar('0')">0</button>
+            <button
+                id="operatorPoint"
+                class="button-dot"
+                onclick="insertChar('.')"
+            >
+                .
+            </button>
+            <button 
+                id="operatorPlus"
+                class="button-plus"
+                onclick="insertChar('+')"
+            >
+                +
+            </button>
+            <button
+                id="operatorMinus"
+                class="button-minus"
+                onclick="insertChar('-')"
+            >
+                -
+            </button>
+            <button
+                id="operatorDivide"
+                class="button-divide"
+                onclick="insertChar('/')"
+            >
+                /
+            </button>
+            <button
+                id="operatorMultiplier" 
+                class="button-multiplier" 
+                onclick="insertChar('*')"
+            >
+                *
+            </button>
+            <button
+                id="operatorEqual"
+                class="button-equal"
+                onclick="calculate()"
+            >
+                =
+            </button>
+            <button 
+                id="operatorBackspace"
+                class="button-backspace"
+                onclick="back()"
+            >
+                <<
+            </button>
+            <button
+                id="operatorClear"
+                class="button-clear"
+                onclick="clearDisplay()"
+            >
+                C
+            </button>
         </div>
     </section>
     <script src="./script.js"></script>
