@@ -1,21 +1,32 @@
-function insert (num) {
-  var number = document.getElementById('display').innerHTML;
-  document.getElementById('display').innerHTML = number + num;
+var newCalculation = false;
+
+function insertChar (char) {
+  var displayValue = document.getElementById('display').innerHTML;
+
+  if (newCalculation) {
+    displayValue = " ";
+    newCalculation = false;
+  }
+
+  document.getElementById('display').innerHTML = displayValue + char;
 }
 
-function clean(){
+function clearDisplay() {
   document.getElementById('display').innerHTML = " ";
 }
 
 function back() {
-  var result = document.getElementById('display').innerHTML;
-  document.getElementById('display').innerHTML = result.substring(0, result.length -1);
+  var displayValue = document.getElementById('display').innerHTML;
+
+  document.getElementById('display').innerHTML = displayValue.substring(0, displayValue.length -1);
 }
 
 function calculate() {
-  var result = document.getElementById('display').innerHTML;
-  if (result) {
-    document.getElementById('display').innerHTML = eval(result);
+  var displayValue = document.getElementById('display').innerHTML;
+
+  if (displayValue) {
+    document.getElementById('display').innerHTML = eval(displayValue);
+    newCalculation = true;
   }
 }
 
